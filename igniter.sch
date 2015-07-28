@@ -1197,20 +1197,22 @@ Basic schematic elements and footprints for 0603, 1206, and PTH resistors.</desc
 <part name="BREAK" library="SparkFun-Connectors" deviceset="RJ45-8" device="PTH" value="RJ45"/>
 <part name="D1" library="SparkFun-LED" deviceset="LED" device="0603" value="RED"/>
 <part name="FRAME1" library="SparkFun-Aesthetics" deviceset="FRAME-LETTER" device=""/>
-<part name="R1" library="SparkFun-Resistors" deviceset="RESISTOR" device="2512" value="1.2k"/>
+<part name="R1" library="SparkFun-Resistors" deviceset="RESISTOR" device="0603-RES" value="12k 1/4W"/>
 <part name="D2" library="SparkFun-LED" deviceset="LED" device="0603" value="RED"/>
-<part name="R2" library="SparkFun-Resistors" deviceset="RESISTOR" device="2512" value="1.2k"/>
+<part name="R2" library="SparkFun-Resistors" deviceset="RESISTOR" device="0603-RES" value="12k 1/4W"/>
 </parts>
 <sheets>
 <sheet>
 <plain>
 <wire x1="83.82" y1="0" x2="83.82" y2="185.42" width="0.2032" layer="97" style="longdash"/>
 <wire x1="165.1" y1="185.42" x2="165.1" y2="35.56" width="0.2032" layer="97" style="longdash"/>
-<text x="44.45" y="65.532" size="1.778" layer="97">1W</text>
-<text x="130.81" y="65.532" size="1.778" layer="97">1W</text>
-<text x="241.3" y="7.62" size="2.54" layer="94">3</text>
+<text x="241.3" y="7.62" size="2.54" layer="94">4</text>
 <text x="172.72" y="12.7" size="2.54" layer="94" align="center-left">David Wrenn &amp; Travis Wyatt</text>
 <text x="172.72" y="8.89" size="2.54" layer="94" align="center-left">SDSU Rocket Project</text>
+<text x="35.56" y="66.04" size="1.778" layer="97" align="top-center">Vf=1.8V
+If=2mA</text>
+<text x="121.92" y="66.04" size="1.778" layer="97" align="top-center">Vf=1.8V
+If=2mA</text>
 </plain>
 <instances>
 <instance part="IGNITER1" gate="JP1" x="45.72" y="157.48"/>
@@ -1433,4 +1435,10 @@ Basic schematic elements and footprints for 0603, 1206, and PTH resistors.</desc
 </sheets>
 </schematic>
 </drawing>
+<compatibility>
+<note version="6.3" minversion="6.2.2" severity="warning">
+Since Version 6.2.2 text objects can contain more than one line,
+which will not be processed correctly with this version.
+</note>
+</compatibility>
 </eagle>
